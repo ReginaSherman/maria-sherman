@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    // padding-top: 90px;
+    .logo {
+        display: flex;
+
+        &__1 {
+            position: relative;
+        }
+
+        &__2 {
+            position: absolute;
+        }
+    }
+
+    .deco {
+        display: flex; 
+        position: absolute;
+        justify-content:space-between;
+
+        width: 100vw;
+        bottom: 0;
+        
+    }
+}
