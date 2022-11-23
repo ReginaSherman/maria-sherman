@@ -1,3 +1,36 @@
 .about {
     background-color: $sage;
+
+    &__content {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+
+        .image-container {
+            position: relative;
+            width: 400px;
+            height: 600px;
+        }
+
+        &-pic {
+            position: absolute;
+            object-fit: cover;
+
+        }
+
+        &-txt {
+            width: 50%;
+
+            &-hdr {
+
+            }
+
+            &-body {
+                font-family: $Gen-Sans;
+            }
+
+
+        }
+    
+    }
 }

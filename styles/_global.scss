@@ -1,17 +1,16 @@
-.section { 
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
     width: 100vw;
-    
+
     font-family: $Gen-Sans-Bold;
     color: $background;
 
     margin: 0;
     padding: 0;
 
-    
-
+    scroll-behavior: smooth;
 }

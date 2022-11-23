@@ -1,5 +1,7 @@
 import '../styles/main.scss'
 import '../styles/globals.css'
+import zenScroll from 'zenscroll'
+
 
 
 function MyApp({ Component, pageProps }) {
