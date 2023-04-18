@@ -1,16 +1,32 @@
+html, body {
+    overflow-x: hidden;
+}
+
+main {
+    background: rgb(255, 253, 247);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 253, 247, 1) 20%,
+        rgba(221, 230, 228, 1) 35%,
+        rgba(183, 184, 174, 1) 70%,
+        rgba(92, 71, 60, 1) 100%
+    );
+}
+
 .section {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: auto;
     width: 100vw;
 
     font-family: $Gen-Sans-Bold;
     color: $background;
 
     margin: 0;
-    padding: 0;
+    padding: 50px 0;
 
     scroll-behavior: smooth;
+
 }

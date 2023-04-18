@@ -21,6 +21,18 @@ export default function Portfolio () {
         <button onClick={() => setOpenModal(true)}>
           <CoverImage title='Portraits' src='images/portfolio/img4.png' />
         </button>
+        <button onClick={() => setOpenModal(true)}>
+          <CoverImage title='Portraits' src='images/portfolio/img5.png' />
+        </button>
+        <button onClick={() => setOpenModal(true)}>
+          <CoverImage title='Portraits' src='images/portfolio/img6.png' />
+        </button>
+        <button onClick={() => setOpenModal(true)}>
+          <CoverImage title='Portraits' src='images/portfolio/img7.png' />
+        </button>
+        <button onClick={() => setOpenModal(true)}>
+          <CoverImage title='Portraits' src='images/portfolio/img8.png' />
+        </button>
       </div>
       <Modal open={openModal} onClose={() => setOpenModal(false)} />
     </div>

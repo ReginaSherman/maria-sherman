@@ -1,35 +1,41 @@
 /* eslint-disable @next/next/no-img-element */
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
-// Import Swiper styles
-import 'swiper/css'
 
 export default function Modal ({ open, onClose }) {
   if (!open) return null
+
   return (
     <div className='overlay'>
       <div className='modalContainer'>
         <p onClick={onClose} className='closeBtn'>
-          CLOSE
+          X
         </p>
         <Swiper
           className='slider'
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
-          slidesPerView={3}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={swiper => console.log(swiper)}
         >
-          <SwiperSlide className='slide'>Slide 1</SwiperSlide>
-          <SwiperSlide className='slide'>Slide 2</SwiperSlide>
-          <SwiperSlide className='slide'>Slide 3</SwiperSlide>
-          <SwiperSlide className='slide'>Slide 4</SwiperSlide>
-          ...
+          <SwiperSlide className='slide'>
+            <img alt='alt' src='images/portfolio/img5.png' />
+          </SwiperSlide>
+          <SwiperSlide className='slide'>
+            <img alt='alt' src='images/portfolio/img6.png' />
+          </SwiperSlide>
+          <SwiperSlide className='slide'>
+            <img alt='alt' src='images/portfolio/img7.png' />
+          </SwiperSlide>
+          <SwiperSlide className='slide'>
+            <img alt='alt' src='images/portfolio/img8.png' />
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
   )
-}
-
-{
 }
